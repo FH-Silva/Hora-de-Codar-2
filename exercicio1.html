@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar 2</title>
+
+    <script>
+        // 1.Escreva um programa em que o usuário informe dois números utilizando o "prompt". Então escreva em tela o maior deles.
+        var num = prompt("Digite o primeiro número: ");
+        var num1 = prompt("Digite o segundo número: ");
+        if (num > num1){
+            alert(num + " é o maior");
+        }
+        else if(num < num1){
+            alert(num1 + " é o maior");
+        }
+        else{
+            alert("São iguais");
+        }
+
+        // 4.Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores. -----
+        var num6 = prompt("Digite um valor: ");
+        var num7 = prompt("Digite mais um valor: ");
+        var num8 = prompt("Digite o último valor: ");
+
+        if(num6 > num7 && num7 > num8){
+            alert(num6 + num7);
+        }else if (num8 > num7 && num7 > num6){
+            alert(num8 + num7);
+        }else if (num8 > num6 && num6 > num7){
+            alert(num8 + num6);
+        }else{
+            alert("Funciona");
+        }
+
+        //5. Faça um programa que leia 6 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos. ----------
+        // var num9 = prompt("Digite um número: ");
+        // var num10 = prompt("Digite mais um número: ");
+        // var num11 = prompt("Digite outro número: ");
+        // var num12 = prompt("Digite um número: ");
+        // var num13 = prompt("Digite um número: ");
+        // var num14 = prompt("Digite um número: ");
+
+    //11. Uma micro calculadora
+    // Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte  forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
+    // O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. 
+    // Observação: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações-------------
+
+    // var valor1 = prompt("Escollha o primeiro número: ");
+    // var valor2 = prompt("Escollha o segundo número: ");
+    
+    //10. Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
+    var homem = "Homem";
+    var mulher = "Mulher";
+    var sexo = prompt("Homem ou Mulher?");
+    
+
+    if (sexo == homem){
+        var altura = prompt("Insira sua altura:");
+        var result = (72.7 * altura) - 58;
+        let n = result.toFixed(2);
+
+        alert("Seu peso ideal é: " + n);
+    }
+    else if (sexo == mulher){
+        var altura = prompt("Insira sua altura:");
+    }
+    else{
+        alert("Valor inválido");
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
