@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora de codar 2</title>
+
+    <script>
+    //10. Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
+    var homem = "Homem";
+    var mulher = "Mulher";
+    var sexo = prompt("Homem ou Mulher?");
+    
+
+    if (sexo == homem){
+        var altura = prompt("Insira sua altura:");
+        var result = (72.7 * altura) - 58;
+        let n = result.toFixed(2);
+
+        alert("Seu peso ideal é: " + n);
+    }
+    else if (sexo == mulher){
+        var altura = prompt("Insira sua altura:");
+    }
+    else{
+        alert("Valor inválido");
+    }
+    </script>
 </head>
 <body>
     

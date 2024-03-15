@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora de codar 2</title>
+
+    <script>
+        // 4.Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores. -----
+        var num6 = prompt("Digite um valor: ");
+        var num7 = prompt("Digite mais um valor: ");
+        var num8 = prompt("Digite o último valor: ");
+
+        if(num6 > num7 && num7 > num8){
+            alert(num6 + num7);
+        }else if (num8 > num7 && num7 > num6){
+            alert(num8 + num7);
+        }else if (num8 > num6 && num6 > num7){
+            alert(num8 + num6);
+        }else{
+            alert("Funciona");
+        }
+    </script>
 </head>
 <body>
     
