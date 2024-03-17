@@ -4,6 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora de codar 2</title>
+
+    <script>
+        //7. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.
+
+        var num1 = parseInt(prompt("Primeiro valor: "));
+        var num2 = parseInt(prompt("Segundo valor: "));
+        var num3 = parseInt(prompt("Terceiro valor: "));
+        var num4 = parseInt(prompt("Quarto valor: "));
+        var num5 = parseInt(prompt("Quinto valor: "));
+        var num6 = parseInt(prompt("Sexto valor: "));
+
+        var valores = [num1, num2, num3, num4, num5, num6];
+        var maiores72 = [];
+        var menores72 = [];
+
+        if (num1 > 72){
+            maiores72.push(num1);
+        }
+        else{
+            menores72.push(num1);
+        }
+        if (num2 > 72){
+            maiores72.push(num2);
+        }
+        else{
+            menores72.push(num2);
+        }
+        if (num3 > 72){
+            maiores72.push(num3);
+        }
+        else{
+            menores72.push(num3);
+        }
+        if (num4 > 72){
+            maiores72.push(num4);
+        }
+        else{
+            menores72.push(num4);
+        }
+        if (num5 > 72){
+            maiores72.push(num5);
+        }
+        else{
+            menores72.push(num5);
+        }
+        if (num6 > 72){
+            maiores72.push(num6);
+        }
+        else{
+            menores72.push(num6);
+        }
+        alert(menores72 + maiores72);
+        
+        var soma = 0;
+        for (var i = 0; i < menores72.length; i++) {
+        soma += menores72[i];
+        }
+        alert("A soma dos números é: " + soma);
+    </script>
 </head>
 <body>
     
