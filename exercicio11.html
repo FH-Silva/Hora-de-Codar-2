@@ -9,10 +9,28 @@
     //11. Uma micro calculadora
     // Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte  forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
     // O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. 
-    // Observação: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações-------------
+    // Observação: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações
 
-    var valor1 = prompt("Escollha o primeiro número: ");
-    var valor2 = prompt("Escollha o segundo número: ");
+        //Pega o valor
+        let valor1 = parseInt(prompt("Digite o primeiro valor: "));
+        let valor2 = parseInt(prompt("Digite o segundo valor: "));
+        let operador = prompt("Escolha um operador matemático: \n 1. Somar \n 2. Subtrair \n 3.Dividir \n 4.Multiplicar" );
+
+        //Verifica, processa e mostra o resultado
+        if (operador == 1){
+            alert(valor1 + valor2);
+        }
+        else if (operador == 2){
+            alert(valor1 - valor2);
+        }
+        else if (operador == 3){
+            alert(valor1 / valor2);
+        }
+        else if (operador == 4){
+            alert(valor1 * valor2);
+        }
+        else
+            alert("Valor ou valores inválidos");
     </script>
 </head>
 <body>
